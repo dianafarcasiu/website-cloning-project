@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+      body{
+        overflow-x: hidden;
+      }
+      @keyframes move-right{
+        0% { transform: translateX(0); }
+        50% { transform: translateX(500px); }
+        100% { transform: translateX(0); }
+        }
+        @keyframes move-left{
+        0% { transform: translateX(500px); }
+        50% { transform: translateX(0); }
+        100% { transform: translateX(500px); }
+        }
+      .move-right{
+        animation: move-right 60s infinite;
+      }
+      .move-left{
+        animation: move-left 60s infinite;
+      }
+    </style>
+  </head>
+
+  <body class="bg-black px-4">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-transparent" aria-label="Third navbar example">
+            <div class="container-fluid px-0">
+                <!-- logo -->
+              <a href="./"><img width="" height="64" src="https://getfiltru.com/logo-light.svg" alt="Filtru Coffee Logo Image"></a>
+
+              <!-- menu wrapper -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="btn btn-dark bg-transparent border-0">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-dark bg-transparent border-0" href="#">Sell with us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-light rounded-pill" >Get the app</a>
+                  </li>
+                </ul> 
+              </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <!-- intro section with title-->
+        <section>
+            <div class="text-light my-5">
+                <h1 class="fw-bold my-5 text-center">Brew the perfect cup of coffee <br><span class="text-warning"> every time.</span></h1>
+                <h2 class="lead my-4 text-center">Whether you're a beginner, or a coffee professional. Drinking Espresso or pour-overs,<br>Filtru is the perfect companion for your morning ritual. Download the app for free today.
+                </h2>
+                <div class="d-flex">
+                    <button class=" mx-auto mb-5 btn py-3 px-4 fw-bold btn-warning rounded-4" >Watch our launch video</button> 
+                </div>
+
+                <div class="d-flex justify-content-center gap-3 mb-5">
+                    <img class="img-fluid" width="150" src="https://getfiltru.com/home/app-store-badge.png" alt="app store badge">
+                    <img class="img-fluid" width="150" src="https://getfiltru.com/home/play-store-badge.png" alt="play store badge">
+                </div>
+            </div>
+            <br>
+        </section>
+
+        <!--App preview section-->
+        <section>
+            <div class="d-flex justify-content-center gap-5 my-5 py-5">
+                <figure>
+                    <img class="img-fluid pt-4" width="240" src="https://getfiltru.com/images/hero/01.png" alt="phone img">
+                    <figcaption class="text-center">Step by step instructions</figcaption>
+                </figure>
+                <figure> 
+                    <img class="img-fluid" width="275" src="https://getfiltru.com/images/hero/02.png" alt="phone img">
+                    <figcaption class="text-center">15 brew methods to choose from</figcaption>
+                </figure>
+                <figure>
+                    <img class="img-fluid pt-4" width="240" src="https://getfiltru.com/images/hero/03.png" alt="phone img">
+                    <figcaption class="text-center">AR tutorials on how to use equipment</figcaption>
+                </figure>
+            </div>
+            <br>
+        </section>
+
+        <!--Features section-->
+        <section>
+
+          <div class="container px-4 py-4" id="icon-grid">
+            <p class="text-center text-secondary">AVAILABLE NOW FOR IPHONE AND IPAD</p>
+            <h1 class="pb-1 text-light fw-bold text-center">What's new in <span class="text-warning">Filtru 3</span></h1>
+        
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 p-5 m-5 text-light">
+              <div class="col d-flex align-items-start mb-4">
+                <img class="mx-3 bg-dark rounded" src="https://getfiltru.com/images/Chemex.png" alt="logo" height="55">
+                <div>
+                  <h6 class="mb-2 fs-5">15 Brew Methods</h6>
+                  <p class="text-secondary">AeroPress, V60, Espresso - Filtru covers the most widely used brewing methods of specialty coffee.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img class="mx-3 bg-dark rounded" src="https://getfiltru.com/images/Espresso.png" alt="logo" height="55">
+                <div>
+                  <h6 class="mb-2 fs-5">Espresso Tools</h6>
+                  <p class="text-secondary">Learn how to dial-in a grinder, record shots and improve the quality of the coffee using an advanced extraction calculator</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img class="mx-3 bg-dark rounded" src="https://getfiltru.com/images/AR Mode.png" alt="logo" height="55">
+                <div>
+                  <h6 class="mb-2 fs-5">Augmented Reality</h6>
+                  <p class="text-secondary">Familiarise yourself with the equipment ahead of time try out new brewing methods using our AR guides.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img class="mx-3 bg-dark rounded" src="https://getfiltru.com/images/Coffee Beans.png" alt="logo" height="55">
+                <div>
+                  <h6 class="mb-2 fs-5">Coffee Beans Journal</h6>
+                  <p class="text-secondary">Keep track of all your coffees to know what to order next by simply pointing your camera at the coffee bag.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img class="mx-3 bg-dark rounded" src="https://getfiltru.com/images/Scale.png" alt="logo" height="55">
+                <div>
+                  <h6 class="mb-2 fs-5">Bluetooth Compatibility</h6>
+                  <p class="text-secondary">Connect a compatible Bluetooth scale to get real time feedback on the ideal pouring trend.</p>
+                </div>
+              </div>
+              <div class="col d-flex align-items-start">
+                <img class="mx-3 bg-dark rounded" src="https://getfiltru.com/images/Automation.png" alt="logo" height="55">
+                <div>
+                  <h6 class="mb-2 fs-5">Powerful Automation</h6>
+                  <p class="text-secondary">Use Siri Shortcuts to prepare coffee in style by combining timer actions and other apps.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Espresso Tools section-->
+
+        <div class="container px-5 py-4" id="custom-cards">
+          <p class="text-center text-secondary">ESPRESSO TOOLS</p>
+          <h1 class="pb-1 text-light fw-bold text-center">Perfect your <span class="text-warning">extraction</span></h1>
+      
+          <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden rounded-4 bg-dark">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="p-2 lh-1 fw-bold text-center">Record your shot</h3>
+                  <p class="text-secondary text-center">Record your espresso shots with a Bluetooth scale or without.</p>
+                  <img class="align-self-center pt-5" src="https://getfiltru.com/images/Espresso - Timer.png" alt="phone app pic" width="175">
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden rounded-4 bg-dark">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="p-2 lh-1 fw-bold text-center">Dial in your grind</h3>
+                  <p class="text-secondary text-center">Use taste profile or extraction calculator to compare and improve the flavour of your coffee.</p>
+                  <img class="align-self-center py-4" src="https://getfiltru.com/images/graph.png" alt="phone app pic" width="200">
+                  <p class="text-secondary text-center small fw-bold">Filtru will gradually suggest whether to adjust the <br>grind or dose to help you get better shot.</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="p-2 lh-1 fw-bold text-center">Calculate extraction</h3>
+                  <p class="text-secondary text-center">With the use of a refractometer you can keep a journal of the extraction process.</p>
+                  <img class="align-self-center pt-5" src="https://getfiltru.com/images/Espresso - Extraction.png" alt="phone app pic" width="175">
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="p-2 mb-5 lh-1 fw-bold text-center">Create a powerful workflow</h3>
+                  <div class="col d-flex align-items-start">
+                    <img class="mx-3 bg-black rounded" src="https://getfiltru.com/images/Pre-infusion.png" alt="logo" height="55">
+                    <div>
+                      <h6 class="mb-0 fs-6">Pre-infusion</h6>
+                      <p class="text-secondary">Filtru can automatically record your pre-infusion as soon as the coffee starts pouring.</p>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <img class="mx-3 bg-black rounded" src="https://getfiltru.com/images/Scale.png" alt="logo" height="55">
+                    <div>
+                      <h6 class="mb-0 fs-6">Optional Bluetooth support</h6>
+                      <p class="text-secondary">When using a compatible Bluetooth scale Filtru records a blueprint of your coffee.</p>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <img class="mx-3 bg-black rounded" src="https://getfiltru.com/images/Grind Setting.png" alt="logo" height="55">
+                    <div>
+                      <h6 class="mb-0 fs-6">Suggested adjustments</h6>
+                      <p class="text-secondary">After each shot the app asks your to rate the coffee based on it's flavour and will suggest adjustments to the dose and the grind.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Bluetooth scales section-->
+
+        <div class="container px-5 py-4" id="custom-cards">
+          <p class="text-center text-secondary">BLUETOOTH SCALES</p>
+          <h1 class="pb-1 text-light fw-bold text-center">Get accurate <span class="text-warning">results</span></h1>
+      
+          <div class="row row-cols-1 row-cols-lg-2 align-items-stretch g-4 py-5">
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden rounded-4 bg-dark">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                  <h3 class="p-2 lh-1 fw-bold text-center">Intuitive way to brew</h3>
+                  <p class="text-secondary text-center">App will guide you to pour water onto the ground coffee at an optimal rate. This ensures the best tasting coffee.</p>
+                  <img class="align-self-center py-4" src="https://getfiltru.com/images/bluetooth_graph.png" alt="phone app pic" width="250">
+                  <p class="text-secondary text-center small fw-bold">The interface turns red when you've not<br>poured enough water</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                  <h3 class="p-2 lh-1 fw-bold text-center">Real-time feedback</h3>
+                  <p class="text-secondary text-center mb-5">Record, review, and improve your pour over coffee over time with help from a coffee scale.</p>
+                  <div class="col d-flex align-items-start">
+                    <img class="mx-3 bg-black rounded" src="https://getfiltru.com/images/Target Weight.png" alt="logo" height="55">
+                    <div>
+                      <h6 class="mb-0 fs-6">Hit the target</h6>
+                      <p class="text-secondary">Filtru shows the target weight at step of the recipe and a red/yellow marker to indicate how close you are to hitting the mark.</p>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <img class="mx-3 bg-black rounded" src="https://getfiltru.com/images/Flow Rate.png" alt="logo" height="55">
+                    <div>
+                      <h6 class="mb-0 fs-6">Optimal Flow rate</h6>
+                      <p class="text-secondary">The app records a flow-rate to help you get an even and consistent extraction.</p>
+                    </div>
+                  </div>
+                  <div class="col d-flex align-items-start">
+                    <img class="mx-3 bg-black rounded" src="https://getfiltru.com/images/Brew Stats.png" alt="logo" height="55">
+                    <div>
+                      <h6 class="mb-0 fs-6">Brew print of your coffee</h6>
+                      <p class="text-secondary">For each coffee brewed with a Bluetooth scale Filtru keeps a graph of both pouring weight and flow rate.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container px-5 py-4">
+          <h2 class="pb-2 text-light fw-bold text-center">Supported Bluetooth scales</h2>
+           
+          <div class="row row-cols-1 row-cols-md-3 mb-3 text-center align-items-stretch g-4">
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden bg-dark px-0 mx-0 rounded-4">
+                <img class="bg-black" src="https://getfiltru.com/images/Scale%20-%20Acaia.png" class="card-img-top" alt="logo">
+                <div class="card-body">
+                  <h5 class="card-header text-light pb-0 mb-0">Acaia</h5>
+                  <hr class="text-light">
+                  <p class="text-start text-secondary small">Acaia Pearl S <br>Acaia Pearl <br>Acaia Lunar <br>Acaia Cinco <br>Acaia Pyxis</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden bg-dark px-0 mx-0 rounded-4">
+                <img class="bg-black" src="https://getfiltru.com/images/Scale%20-%20Felicita.png" class="card-img-top" alt="logo">
+                <div class="card-body">
+                  <h5 class="card-header text-light pb-0 mb-0">Felicita</h5>
+                  <hr class="text-light">
+                  <p class="text-start text-secondary small">Felicita Incline <br>Felicita Parallel <br>Felicita Arc</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-cover h-100 overflow-hidden bg-dark px-0 mx-0 rounded-4">
+                <img class="bg-black" src="https://getfiltru.com/images/Scale%20-%20Decent.png" class="card-img-top" alt="logo">
+                <div class="card-body">
+                  <h5 class="card-header text-light pb-0 mb-0">and others:</h5>
+                  <hr class="text-light">
+                  <p class="text-start text-secondary small">Decent Espresso <br>Eureka Precisa <br>DiFluid Microbalance <br>Wilfa Uniform <br>Atomax Skale 2 <br>Escali SmartConnect <br>Drop (Now Fresco)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Reviews section-->
+
+        <div class="container px-5 py-4">
+          <p class="text-center text-secondary">APP REVIEWS</p>
+          <h1 class="pb-5 text-light fw-bold text-center">What <span class="text-warning">others</span> are saying</h1>
+          <h5 class="pb-5 text-light text-center">Filtru has been featured in:</h5>
+          <div class="d-flex justify-content-center g-5 py-3">
+            <img class="px-4" src="https://getfiltru.com/images/promos/time.svg" alt="logo" height="35">
+            <img class="px-4" src="https://getfiltru.com/images/promos/tele5.png" alt="logo" height="35">
+            <img class="px-4" src="https://getfiltru.com/images/promos/caffeine-mag.png" alt="logo" height="35">
+            <img class="px-4" src="https://getfiltru.com/images/promos/app-store.svg" alt="logo" height="35">
+          </div>
+        </div>
+
+        <div class="reviews">
+
+          <div class="row d-flex gap-2 my-2 flex-nowrap">
+            <div class="card bg-secondary rounded p-2 mt-4 move-left" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“I think this is the best coffee making app there is. It gets the balance between simplicity and fiddling about right, and the interface is really slick. I use it daily! Only thing missing is an Apple Watch companion app”</p>
+                <p class="text-secondary-emphasis text-end">THEMISTRYMAN</p>
+              </div>
+            </div>
+            <div class="card bg-secondary rounded p-2 mt-4 move-left" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“I had been a barista for 7 years and never had a home set up but when I switched professions as did my love for coffee. This app gives you great guides for multiple brew methods.”</p><br>
+                <p class="text-secondary-emphasis text-end">XSONICYOUTHCREWX</p>
+              </div>
+            </div>
+            <div class="card bg-secondary rounded p-2 mt-4 move-left" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“This app is really well done and it is a pleasure to use. It got support for Bluetooth scales and recipes for chimes aero press and v60. You can even buy beans and merchandise. I really like the overall design, the icons and the animations!”</p>
+                <p class="text-secondary-emphasis text-end">TETRAPANDA</p>
+              </div>
+            </div>
+            <div class="card bg-secondary rounded p-2 mt-4 move-left" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“I just needed an app to guide me through the process of brewing my Chemex and AeroPress, I like how this does just that and lets me change ratios and volume of water and coffee.”</p><br>
+                <p class="text-secondary-emphasis text-end">SELFSTA</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row d-flex gap-2 my-2 flex-nowrap">
+            <div class="card bg-secondary rounded p-2 my-t move-right" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“This is a great app for a beginner. It’s helped me get my ratios right for different brewing methods.”</p><br><br><br>
+                <p class="text-secondary-emphasis text-end">MRPAGE8466</p>
+              </div>
+            </div>
+            <div class="card bg-secondary rounded p-2 my-t move-right" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“clear and easy to use, ordered beans on Sunday, goth them on Tuesday, no hassle. will try the brewing process next! Would heartily recommend to all coffee enthusiasts”</p><br><br>
+                <p class="text-secondary-emphasis text-end">SHLOMMM</p>
+              </div>
+            </div>
+            <div class="card bg-secondary rounded p-2 my-t move-right" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“This has become an essential companion for my coffee brewing; highly recommended!”</p><br><br><br><br>
+                <p class="text-secondary-emphasis text-end">KETTIBY</p>
+              </div>
+            </div>
+            <div class="card bg-secondary rounded p-2 my-t move-right" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“Best app for filters coffees better than most apps also free I hope to make some HUB for customs to shred more choices of new ways for different brands of specialty beans”</p><br><br>
+                <p class="text-secondary-emphasis text-end">MONI9955</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row d-flex gap-2 my-2 flex-nowrap">
+            <div class="card bg-secondary rounded p-2 my-t move-left" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“With this app you get a real sense of passion. The methods are clear to understand and whether you're a newbie to the world of coffee or a seasoned barista you'll thoroughly enjoy having this coffee timer beside you. I love the simplicity of the interface design along with the beautiful crafted iconography. Great work, great product.”</p>
+                <p class="text-secondary-emphasis text-end">THISISJAMIELEUNG</p>
+              </div>
+            </div>
+            <div class="card bg-secondary rounded p-2 my-t move-left" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“I’ve been using Filtru for almost a year and have never had any issues with it. I love being able to set how many cups of coffee I’m going to make. My only limitations are my own Chemex. It’s always pretty cool to show people too.”</p><br><br>
+                <p class="text-secondary-emphasis text-end">FUERTE111</p>
+              </div>
+            </div>
+            <div class="card bg-secondary rounded p-2 my-t move-left" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“This app is wonderful and I use it daily to make wonderful coffee! That said, I’d like to see more brewing options added and it doesn’t seem possible to view or import other people’s guides, despite the ability to share them? Keep up the great work, and I hope to watch this app grow and expand its wonderful footprint!”</p>
+                <p class="text-secondary-emphasis text-end">IAMBLUED</p>
+              </div>
+            </div>
+            <div class="card bg-secondary rounded p-2 my-t move-left" style="width: 22rem;">
+              <div class="card-body">
+                <p class="card-text text-light">“Really incredible app, I've been waiting for ages to find an app like this. It's perfectly designed, has amazing functions, and helps me produce a great cup of coffee. I love it!”</p><br><br><br><br>
+                <p class="text-secondary-emphasis text-end">CIARAN RASCH</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </main>
+
+      <!--Footer section-->
+
+      <div class="container px-5">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-4 py-5 my-5">
+
+          <div class="col mb-3">
+            <img src="https://getfiltru.com/logo-light.svg" alt="logo">
+            <p class="text-light mt-4">Brew the perfect cup of coffee, every time.</p>
+          </div>
+
+          <div class="col mb-3 px-5">
+            <h5 class="text-light-emphasis small">ABOUT FILTRU</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light-emphasis">Press Kit</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light-emphasis">News</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light-emphasis">Today at Filtru</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3 px-0">
+            <h5 class="text-light-emphasis small">BUSINESS</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light-emphasis">Sell with us</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3 px-0 mx-0">
+            <h5 class="text-light-emphasis small">LEGAL</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light-emphasis">Privacy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light-emphasis">Terms</a></li>
+            </ul>
+          </div>
+          
+        </footer>
+      </div>
+
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-center py-3 my-4 border-top border-secondary">
+            <p class="mb-3 mb-md-0 text-center small text-secondary">© 2016-2022 Spirograph Limited. All rights reserved.</p>
+        </footer>
+      </div>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
